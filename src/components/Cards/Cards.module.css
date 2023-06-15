@@ -1,7 +1,4 @@
 .container{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 50px;
-  gap: 15px;
+  justify-content: space-evenly;
 }

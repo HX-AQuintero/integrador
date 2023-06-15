@@ -61,11 +61,11 @@ const ButtonClose = styled.button`
 
 
 
-export default function Card({ onClose, name, status, species, gender,origin, image }) {
+export default function Card({ onClose, name, status, species, gender, origin, image, id }) {
    return (
       <DivCard>
          <DivImg> 
-            <ButtonClose onClick={onClose}>X</ButtonClose>
+            <ButtonClose onClick={() => onClose(id)}>X</ButtonClose>
             <Img src={image} alt='' />
             <Name> {name} </Name>
          </DivImg>  
